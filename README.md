@@ -9,8 +9,13 @@
 
   imgs: Thư mục chứa hình ảnh cần thiết cho trò chơi (ví dụ: snake_head.png và food.png).
     
-## Thay đổi tốc độ rắn 
+## Tùy chỉnh
   "main.py" => "clock.tick(100)"
+  
+  chọn chế độ thủ công hoặc tự động ở "main.py" => 
+  
+    direction = auto_move(snake, food, COLS, ROWS, direction) #hoặc
+    direction = manual_move(direction)
 
 ## Phần chính 
   thay đổi lại thuật toán BFS ở hàm "bfs_path"
