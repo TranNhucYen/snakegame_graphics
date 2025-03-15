@@ -12,7 +12,5 @@
 ## Thay đổi tốc độ rắn 
   "main.py" => "clock.tick(100)"
 
-## Phần chính : 
+## Phần chính 
   thay đổi lại thuật toán BFS ở hàm "bfs_path"
-
-
