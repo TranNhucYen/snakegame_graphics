@@ -10,7 +10,10 @@
   imgs: Thư mục chứa hình ảnh cần thiết cho trò chơi (ví dụ: snake_head.png và food.png).
     
 ## Tùy chỉnh
-  "main.py" => "clock.tick(100)"
+
+  điều chỉnh tốc độ rắn "main.py" => 
+  
+    clock.tick(100)
   
   chọn chế độ thủ công hoặc tự động ở "main.py" => 
   
