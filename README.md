@@ -9,8 +9,10 @@
 
   imgs: Thư mục chứa hình ảnh cần thiết cho trò chơi (ví dụ: snake_head.png và food.png).
     
-## Thay đổi tốc độ rắn ở file "main.py" => "clock.tick(100)"
+## Thay đổi tốc độ rắn 
+  "main.py" => "clock.tick(100)"
 
-## Phần chính : thay đổi lại thuật toán BFS ở hàm "bfs_path"
+## Phần chính : 
+  thay đổi lại thuật toán BFS ở hàm "bfs_path"
 
 
