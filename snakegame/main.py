@@ -3,6 +3,20 @@ import sys
 from graphics import *
 from logic import *
 
+def manual_move(current_direction):
+    """Xử lý đầu vào từ bàn phím và trả về hướng di chuyển mới."""
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_UP] or keys[pygame.K_w]:
+        return (0, -1) if current_direction != (0, 1) else current_direction
+    elif keys[pygame.K_DOWN] or keys[pygame.K_s]:
+        return (0, 1) if current_direction != (0, -1) else current_direction
+    elif keys[pygame.K_LEFT] or keys[pygame.K_a]:
+        return (-1, 0) if current_direction != (1, 0) else current_direction
+    elif keys[pygame.K_RIGHT] or keys[pygame.K_d]:
+        return (1, 0) if current_direction != (-1, 0) else current_direction
+    return current_direction
+
+
 def main():
     pygame.init()
     
@@ -43,7 +57,10 @@ def main():
                     running = False
         
         if not game_over:
+            # Di chuyển tự động
             direction = auto_move(snake, food, COLS, ROWS, direction)
+            # Di chuyển thủ công
+            # direction = manual_move(direction)
             success, snake, food, gained_score = move_snake(snake, food, direction, COLS, ROWS)
             if not success:
                 game_over = True
