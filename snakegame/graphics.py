@@ -4,6 +4,7 @@ import pygame
 WHITE = (255, 255, 255)
 GREEN = (170, 215, 81)
 DARK_GREEN = (162, 209, 73)
+#DARK_GREEN và GREEN là 2 màu xen kẻ của bản đồ
 RED = (255, 0, 0)
 SNAKE_COLOR = (71, 114, 255)
 BORDER_COLOR = (80, 200, 120)
